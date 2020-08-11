@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 function App() {
   return (
@@ -29,6 +31,29 @@ function App() {
       <h2>Greetings</h2>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+
+      <h2>Random</h2>
+
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
+
+      <h2>BoxColor</h2>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+
+      <h2>CreditCard</h2>
+
+      <h2>Rating</h2>
+
+      <h2>DriverCard</h2>
+
+      <h2>ClickablePicture</h2>
+
+      <h2>Dice</h2>
+
+      <h2>Carousel</h2>
+
+      <h2>NumbersTable</h2>
     </div>
   );
 }
